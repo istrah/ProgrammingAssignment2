@@ -1,4 +1,3 @@
-
 ##This function takes a matrix, and sets a list containing several functions intended to cache te matrix  
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -9,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 m<<-NULL
         }
         get<-function()x
-        setsolve<-function(solve) m <<- solve
+        setsolve<-function(solv) m <<- solv
         getsolve<-function()m
         list(set=set,get=get,
              setsolve=setsolve,
